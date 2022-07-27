@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "deweb",
+    "version": "1.0",
+    "description": "De-webs the messy web.",
+    "icons": {
+        "48": "icons/deweb48.svg",
+        "96": "deweb96.svg"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "deweb.js"
+            ]
+        }
+    ]
+}
